@@ -10,6 +10,9 @@ body{
     --br: 8px;
     --black: #242424
 }
+a{
+    text-decoration: none;
+}
 .image{
     z-index: -1;
     position: absolute;
