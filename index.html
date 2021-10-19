@@ -35,8 +35,19 @@
 </head>
 
 <body>
+    <div class="overlay" id="overlay">
+        <h2>Please view on a desktop</h2>
+        <div class="dotsd">
+        <div class="lds-ellipsis" id="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    </div>
     <div class="image">
-        <img src="img/back.jpg" alt="" srcset="">
+        <img src="img/back.jpg" alt="my photo" srcset="">
         <div class="overlayimg"></div>
     </div>
     <div class="main">
@@ -143,11 +154,20 @@
         </div>
     </div>
     <div class="donation">
-        <img src="img/donation.png" alt="" srcset="">
+        <img src="img/donation.png" alt="donation button" srcset="">
     </div>
     <div class="footer">
         <h4>Made With ❤️ from India</h4>
     </div>
+
+    <script>
+        console.log("asd");
+        window.addEventListener("load", function() {
+            const overlay = document.querySelector(".overlay");
+            overlay.className += " hidden"; 
+            document.body.style.overflow = "auto";
+        });
+    </script>
 </body>
 
 </html>
